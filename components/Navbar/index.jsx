@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "./images/logo.svg";
-
 import { NAV_LINKS } from "./constant";
 import Hamburger from "hamburger-react";
 import clsx from "clsx";
@@ -34,7 +33,7 @@ function Navbar() {
           {/* Navbar for Mobile */}
           <nav
             className={clsx(
-              "absolute top-[90px] right-0 left-0 bottom-0 w-full md:hidden transition-all delay-300 ease-in ",
+              "absolute top-[90px] right-0 left-0 bottom-0 w-full md:hidden transition-all delay-200 ease-in ",
               {
                 "opacity-100 visible h-screen": isActive,
                 "opacity-0 invisible h-0": !isActive,
@@ -59,10 +58,7 @@ function Navbar() {
             </div>
           </nav>
           {/* Navbar for Desktop */}
-          <nav
-            className="hidden md:flex gap-8 items-center 
-          "
-          >
+          <nav className="hidden md:flex gap-8 items-center">
             {NAV_LINKS.map((link) => (
               <Link className="nav-link" key={link.key} href={link.path}>
                 {link.title}
