@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+  .heading-2xl {
+    font-family: var(--font-fraunces);
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 96px; /* 100% */
+  }
   .heading-xl {
     font-family: var(--font-fraunces);
     font-size: 72px;
@@ -69,5 +76,16 @@
     font-style: normal;
     font-weight: 900;
     line-height: 25px; /* 138.889% */
+  }
+
+  .gradient-text {
+    background-image: linear-gradient(
+      180deg,
+      rgba(254, 252, 247, 0) 0%,
+      #ccc 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
