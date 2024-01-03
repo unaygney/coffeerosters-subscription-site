@@ -10,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="antialiased w-full h-full">
-      <body className={`${(titleFont, bodyFont)} bg-light-cream h-full w-full`}>
+      <body
+        className={` ${titleFont.className} ${bodyFont.className}  bg-light-cream h-full w-full`}
+      >
         <Navbar />
         {children}
       </body>

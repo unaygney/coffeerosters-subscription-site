@@ -33,7 +33,7 @@ function Navbar() {
           {/* Navbar for Mobile */}
           <nav
             className={clsx(
-              "absolute top-[90px] right-0 left-0 bottom-0 w-full md:hidden transition-all delay-200 ease-in ",
+              "absolute top-[90px] right-0 left-0 bottom-0 w-full md:hidden transition-all delay-200 ease-in z-10 ",
               {
                 "opacity-100 visible h-screen": isActive,
                 "opacity-0 invisible h-0": !isActive,
@@ -50,7 +50,7 @@ function Navbar() {
                   onClick={() => setActive(false)}
                   className="nav-link-mobile font-black"
                   href={link.path}
-                  key={link.key}
+                  key={link.id}
                 >
                   {link.title}
                 </Link>
@@ -60,7 +60,7 @@ function Navbar() {
           {/* Navbar for Desktop */}
           <nav className="hidden md:flex gap-8 items-center">
             {NAV_LINKS.map((link) => (
-              <Link className="nav-link" key={link.key} href={link.path}>
+              <Link className="nav-link" key={link.id} href={link.path}>
                 {link.title}
               </Link>
             ))}

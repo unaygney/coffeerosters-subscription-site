@@ -4,49 +4,43 @@
 
 @layer components {
   .heading-xl {
-    color: #333d4b;
-    font-family: Fraunces;
+    font-family: var(--font-fraunces);
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
     line-height: 72px; /* 100% */
   }
   .heading-l {
-    color: #333d4b;
-    font-family: Fraunces;
+    font-family: var(--font-fraunces);
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: 48px; /* 120% */
   }
   .heading-m {
-    color: #333d4b;
-    font-family: Fraunces;
+    font-family: var(--font-fraunces);
     font-size: 32px;
     font-style: normal;
     font-weight: 900;
     line-height: 36px; /* 112.5% */
   }
   .heading-s {
-    color: #333d4b;
-    font-family: Fraunces;
+    font-family: var(--font-fraunces);
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
     line-height: 32px; /* 133.333% */
   }
   .text {
-    color: #333d4b;
-    font-family: Barlow;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */
-    opacity: 0.8;
+    font-family: var("--font-barlow");
   }
   .nav-link {
+    font-family: var("--font-barlow");
     color: #83888f;
-    font-family: Barlow;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -55,9 +49,9 @@
     text-transform: uppercase;
   }
   .nav-link-mobile {
+    font-family: var("--font-barlow");
     color: #333d4b;
     text-align: center;
-    font-family: Fraunces;
     font-size: 24px;
     font-weight: 900;
     line-height: 32px; /* 133.333% */
@@ -65,5 +59,15 @@
   }
   .nav-link:hover {
     color: #333d4b;
+  }
+
+  .button-text {
+    color: #fefcf7;
+    font-family: var(--font-fraunces);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; /* 138.889% */
   }
 }

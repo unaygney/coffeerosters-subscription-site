@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fraunces: "var(--font-fraunces)",
+        barlow: "var(--font-barlow)",
+      },
       colors: {
         "dark-cyan": "#0E8784",
         "dark-grey-blue": "#333D4B",
