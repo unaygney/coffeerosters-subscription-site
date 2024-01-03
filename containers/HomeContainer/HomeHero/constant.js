@@ -1,6 +1,6 @@
 import heroMobile from "./images/image-hero-coffeepress-mobile.jpg";
 import heroTablet from "./images/image-hero-coffeepress-tablet.jpg";
-import heroDesktop from "./images/image-hero-coffeepress-Desktop.jpg";
+import heroDesktop from "./images/image-hero-coffeepress-desktop.jpg";
 export const HERO_INFO = {
   title: "Great coffee made simple.",
   content:
