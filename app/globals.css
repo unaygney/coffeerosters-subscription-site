@@ -54,4 +54,16 @@
     letter-spacing: 0.923px;
     text-transform: uppercase;
   }
+  .nav-link-mobile {
+    color: #333d4b;
+    text-align: center;
+    font-family: Fraunces;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px; /* 133.333% */
+    font-style: italic;
+  }
+  .nav-link:hover {
+    color: #333d4b;
+  }
 }
