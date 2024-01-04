@@ -8,9 +8,12 @@ function Locations() {
         <h3 className="heading-s text-grey font-fraunces font-black">
           Our headquarters
         </h3>
-        <div className="flex flex-col gap-20 ">
+        <div className="flex flex-col md:flex-row gap-20 md:gap-0 ">
           {LOCATIONS.map((location) => (
-            <div key={location.id} className="flex flex-col items-center">
+            <div
+              key={location.id}
+              className="flex flex-col items-center md:items-start md:flex-1"
+            >
               <div className="mb-[47px]">{location.image}</div>
               <h3 className="heading-s text-[28px] leading-9 text-dark-grey-blue">
                 {location.name}
