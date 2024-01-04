@@ -14,7 +14,7 @@ function Footer() {
         <nav className="flex flex-col md:flex-row gap-6 md:gap-8 text-center ">
           {LINKS.map((link) => (
             <Link
-              className="nav-link first:ml-[102px] hover:text-light-cream"
+              className="nav-link lg:first:ml-[102px] hover:text-light-cream"
               key={link.id}
               href={link.path}
             >
