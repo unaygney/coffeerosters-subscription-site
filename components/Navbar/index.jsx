@@ -46,12 +46,8 @@ function Navbar() {
           >
             <div className="flex flex-col items-center gap-8 py-10 ">
               {NAV_LINKS.map((link) => (
-                <button onClick={() => setActive(false)}>
-                  <Link
-                    className="nav-link-mobile font-black"
-                    href={link.path}
-                    key={link.id}
-                  >
+                <button key={link.id} onClick={() => setActive(false)}>
+                  <Link className="nav-link-mobile font-black" href={link.path}>
                     {link.title}
                   </Link>
                 </button>
