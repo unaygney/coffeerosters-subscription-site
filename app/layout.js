@@ -13,10 +13,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={` ${titleFont.className} ${bodyFont.className} antialiased w-full h-full`}
     >
-      <body className={`   bg-light-cream h-full w-full  `}>
-        <Navbar />
-        {children}
-      </body>
+      <body className={` bg-light-cream h-full w-full  `}>{children}</body>
     </html>
   );
 }

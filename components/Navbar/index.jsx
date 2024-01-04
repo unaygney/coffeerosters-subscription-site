@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <header
-      className={`bg-transparent px-6 md:px-10 h-[90px] md:h-[120px] lg:h-[113px] flex items-center relative   `}
+      className={`bg-transparent   h-[90px] md:h-[120px] lg:h-[113px] flex items-center relative   `}
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
@@ -46,14 +46,15 @@ function Navbar() {
           >
             <div className="flex flex-col items-center gap-8 py-10 ">
               {NAV_LINKS.map((link) => (
-                <Link
-                  onClick={() => setActive(false)}
-                  className="nav-link-mobile font-black"
-                  href={link.path}
-                  key={link.id}
-                >
-                  {link.title}
-                </Link>
+                <button onClick={() => setActive(false)}>
+                  <Link
+                    className="nav-link-mobile font-black"
+                    href={link.path}
+                    key={link.id}
+                  >
+                    {link.title}
+                  </Link>
+                </button>
               ))}
             </div>
           </nav>
