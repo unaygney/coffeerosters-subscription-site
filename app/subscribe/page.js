@@ -1,7 +1,7 @@
 import React from "react";
-
+import SubscribeContainer from "@/containers/SubscribeContainer";
 function Subscribe() {
-  return <div></div>;
+  return <SubscribeContainer />;
 }
 
-export default page;
+export default Subscribe;
