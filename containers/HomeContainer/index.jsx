@@ -2,6 +2,7 @@ import React from "react";
 import HomeHero from "./HomeHero";
 import CollectionCard from "./CollectionCard";
 import ChooseCard from "./ChooseCard";
+import Howtowork from "./How-to-work";
 
 function HomeContainer() {
   return (
@@ -9,7 +10,7 @@ function HomeContainer() {
       <HomeHero />
       <CollectionCard />
       <ChooseCard />
-      <p>deneme</p>
+      <Howtowork />
     </main>
   );
 }
