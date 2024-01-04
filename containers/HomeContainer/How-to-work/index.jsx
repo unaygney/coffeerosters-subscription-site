@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Howtowork() {
   return (
-    <section className="bg-transparent">
+    <section className="bg-transparent mb-[120px] md:mb-[144px] lg:mb-[200px]  ">
       <div className="container mx-auto">
         <div className="flex flex-col gap-20 items-center md:items-start  lg:px-[85px]">
           <div className="flex md:flex-col justify-center w-full md:gap-10">
