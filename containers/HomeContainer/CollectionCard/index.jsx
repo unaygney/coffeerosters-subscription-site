@@ -18,7 +18,7 @@ function CollectionCard() {
               className="w-full flex flex-col items-center lg:justify-center gap-4 text-center md:flex-row lg:flex-col md:text-start lg:text-center  md:gap-9 lg:flex-1"
             >
               <div className="relative w-[200px] h-[151px] md:w-[255px] md:h-[193px] mb-2">
-                <Image src={collection.image} />
+                <Image src={collection.image} alt="image" fill />
               </div>
               <div className="flex flex-col gap-4 md:gap-6">
                 <h4 className="heading-s text-dark-grey-blue">
