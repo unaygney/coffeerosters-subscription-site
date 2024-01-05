@@ -33,11 +33,11 @@ function Capsule({ value, register }) {
         )}
       >
         <div className="overflow-hidden">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:flex-row">
             {value.options.map((option) => (
               <label
                 key={option.id}
-                className={`flex flex-col gap-2 p-6 rounded-lg cursor-pointer ${
+                className={`flex flex-col gap-2 p-6 rounded-lg cursor-pointer md:gap-6 md:pb-[84px] ${
                   selectedOption === option.id
                     ? "bg-dark-cyan text-white"
                     : "bg-[#F4F1EB] text-dark-grey-blue"
