@@ -23,6 +23,12 @@ function OrderCoffee() {
 
   const watchedValues = watch();
 
+  const isValuesEmpty = () => {
+    return Object.values(watchedValues).some((value) => value === "");
+  };
+
+  console.log(isValuesEmpty());
+
   return (
     <section className="container mx-auto bg-transparent mb-[120px] md:mb-[144px] lg:mb-[200px]">
       <div className="flex justify-between gap-[120px]">
@@ -41,6 +47,7 @@ function OrderCoffee() {
             className={"md:mx-auto"}
             type={"submit"}
             title={"Create my plan!"}
+            disabled={isValuesEmpty()}
           />
         </form>
       </div>
