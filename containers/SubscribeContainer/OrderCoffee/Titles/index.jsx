@@ -1,31 +1,9 @@
 import React from "react";
-export const TITLES = [
-  {
-    id: 1,
-    name: "Preferences",
-  },
-  {
-    id: 2,
-    name: "Bean Type",
-  },
-  {
-    id: 3,
-    name: "Quantity",
-  },
-  {
-    id: 4,
-    name: "Grind Option",
-  },
-  {
-    id: 5,
-    name: "Deliveries",
-  },
-];
 
-function Titles() {
+function Titles({ titles }) {
   return (
     <div className="hidden lg:flex w-[255px] bg-transparent h-[300px] flex-col gap-6 font-fraunces ">
-      {TITLES.map((title) => (
+      {titles.map((title) => (
         <button
           key={title.id}
           className="flex gap-7 items-center text-grey border-b border-grey pb-6 cursor-pointer hover:text-dark-grey-blue"

@@ -145,3 +145,26 @@ export const ORDER_CAPSULES = [
     ],
   },
 ];
+
+export const DefaultTitles = [
+  {
+    id: 1,
+    name: "Preferences",
+  },
+  {
+    id: 2,
+    name: "Bean Type",
+  },
+  {
+    id: 3,
+    name: "Quantity",
+  },
+  {
+    id: 4,
+    name: "Grind Option",
+  },
+  {
+    id: 5,
+    name: "Deliveries",
+  },
+];
