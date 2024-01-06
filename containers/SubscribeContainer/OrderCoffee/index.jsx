@@ -5,6 +5,7 @@ import { ORDER_CAPSULES } from "./constant";
 import { useForm } from "react-hook-form";
 import Button from "@/components/Button";
 import Summary from "./Summary";
+import Titles from "./Titles";
 
 function OrderCoffee() {
   const { handleSubmit, register, watch } = useForm({
@@ -24,10 +25,12 @@ function OrderCoffee() {
 
   return (
     <section className="container mx-auto bg-transparent mb-[120px] md:mb-[144px] lg:mb-[200px]">
-      <div>
+      <div className="flex justify-between gap-[120px]">
+        <Titles />
+
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-8 md:gap-10"
+          className="flex flex-col gap-8 md:gap-10 lg:flex-1"
         >
           {ORDER_CAPSULES.map((capsule) => (
             <Capsule key={capsule.id} value={capsule} register={register} />

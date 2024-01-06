@@ -2,7 +2,7 @@ import React from "react";
 
 function Summary({ value }) {
   return (
-    <section className="w-full  p-6 bg-dark-grey-blue text-white mt-[84px] rounded-[10px] ">
+    <section className="w-full  p-6 lg:py-8 lg:px-16 bg-dark-grey-blue text-white mt-[84px] rounded-[10px] ">
       <div className="flex flex-col gap-2 text-start">
         <h5 className="text-[16px] font-normal uppercase font-barlow leading-7 opacity-50">
           Order Summary

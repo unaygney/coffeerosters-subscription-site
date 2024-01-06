@@ -37,7 +37,7 @@ function Capsule({ value, register }) {
             {value.options.map((option) => (
               <label
                 key={option.id}
-                className={`flex flex-col gap-2 p-6 rounded-lg cursor-pointer md:gap-6 md:pb-[84px] ${
+                className={`flex flex-col gap-2 p-6 rounded-lg cursor-pointer md:gap-6 md:pb-[84px] lg:hover:bg-pale-orange lg:hover:text-dark-grey-blue ${
                   selectedOption === option.id
                     ? "bg-dark-cyan text-white"
                     : "bg-[#F4F1EB] text-dark-grey-blue"
